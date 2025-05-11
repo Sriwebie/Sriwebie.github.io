@@ -1,0 +1,156 @@
+<!-- shoping-form.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mycss/stylesheet-shoping-form.css">
+    <title>Services Calculator</title>
+</head>
+
+<body class="body" style="background-image:url(Backg.jpeg);">
+    <div class="container">
+        <div class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a>
+                    <div class="sub-home">
+                        <ul>
+                            <li><a href="index.html#about-us">About Us</a></li>
+                            <li><a href="index.html#our-services">Our Services</a></li>
+                            <li><a href="index.html#images">Images</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="items-page.html">Items Page</a></li>
+                <li  class="active"><a href="shoping-form.html">Online Shopping form</a></li>
+                <li><a href="contact-us-page.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="table">
+            <br>
+            <table border="1" id="table-content" class="table">
+                <tr id="thead">
+                    <th>SERVICE</th>
+                    <th>SERVICE CLASS</th>
+                    <th>REQUESTED SERVICES</th>
+                    <th>COST</th>
+                    
+                </tr>
+                <div>
+                    <tr>
+                        <td>
+                          <input type="checkbox" id="item1" name="item1">
+                          <label for="item1">T-shirt</label><br>
+                        </td>
+                        <td>
+                          <label style="display: block;"><input type="radio" name="T-shirt" value="17.99">
+                             ($17.99)</label>
+                          
+                        </td>
+                        <td>
+                          <label>Number of T-shirts</label>
+                          <select id="noofpets">
+                            <option value="1">1 T-shirt</option>
+                            <option value="2">2 T-shirts</option>
+                            <option value="3">3 T-shirts</option>
+                            <option value="4">4 T-shirts</option>
+                          </select>
+                        </td>
+                        <td>
+                          <p id="totalPrice">0 $</p>
+                        </td>
+                      </tr>
+
+                
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="item2" name="item2">
+                          <label for="item2">Jeans</label><br>
+                        </td>
+                        <td>
+                          <label style="display: block;"><input type="radio" name="Jeans" value="40">
+                             ($40)</label>
+                          
+                        </td>
+                        <td>
+                          <label>Number of Jeans</label>
+                          <select id="duration">
+                            <option value="1">1 Jeans</option>
+                            <option value="2">2 Jeans</option>
+                            <option value="3">3 Jeans</option>
+                            <option value="4">4 Jeans</option>
+                          </select>
+                        </td>
+                        <td>
+                          <p id="totalPrice2">0 $</p>
+                        </td>
+                      </tr>
+
+                      
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="item3" name="item3">
+                          <label for="item3">Denim Jacket</label><br>
+                        </td>
+                        <td class="std">
+                          <label style="display: block;"><input type="radio" name="Denim Jacket" value="55">
+                             ($55)</label>
+                          
+                        </td>
+                        <td>
+                          <label>Number of Jackets</label>
+                          <select id="combo">
+                            <option value="1">1 Jacket</option>
+                            <option value="2">2 Jackets</option>
+                            <option value="3">3 Jackets</option>
+                            <option value="4">4 Jackets</option>
+                          </select>
+                        </td>
+                        <td>
+                          <p id="totalPrice3">0 $</p>
+                        </td>
+                      </tr>
+
+                      
+                      
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="item4" name="item4">
+                          <label for="item4">Sweater</label><br>
+                        </td>
+                        <td>
+                          <label style="display: block;"><input type="radio" name="Sweater" value="27">
+                            ($27)</label>
+                        
+                        </td>
+                        <td>
+                          <label>Number of Sweaters</label>
+                         <select id="consult">
+                         <option value="1">1 Sweater</option>
+                        <option value="2">2 Sweaters</option>
+                        <option value="3">3 Sweaters</option>
+                        <option value="4">4 Sweaters</option>
+                         </select>
+                        </td>
+                        <td>
+                          <p id="totalPrice4">0 $</p>
+                        </td>
+                      </tr>
+                      
+                
+
+                      <tr class="str">
+                        <td colspan="2">TOTAL COST</td>
+                        <td>
+                          <input type="button" id="totalcost" value="CALCULATE" onclick="verifydata()">
+                        </td>
+                        <td>
+                          <p id="CALCULATE">0 $</p>
+                        </td>
+                      </tr>
+            </table>
+        </div>
+        <script src="javascript/myshopform.js"></script>
+    </div>
+</body>
+
+</html>
